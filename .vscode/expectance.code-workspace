@@ -1,0 +1,45 @@
+{
+  "folders": [
+    {
+      "name": "expectance",
+      "path": "../",
+    },
+  ],
+
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+    },
+    "prettier.configPath": "./.prettierrc.json",
+    "json.schemas": [
+      {
+        "fileMatch": [
+          ".prettierrc.json",
+        ],
+        "schema": {
+          // "allowTrailingCommas": true,
+        },
+      },
+    ],
+
+    "eslint.enable": true,
+    "eslint.options": {
+      "overrideConfigFile": "./.eslintrc.json",
+    },
+
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.suggest.paths": true,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+  },
+
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode",
+    ],
+  },
+
+  // https://prettier.io/docs/en/options.html#quote-props
+  // json5
+}

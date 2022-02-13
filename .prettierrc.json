@@ -1,0 +1,26 @@
+{
+  "printWidth": 80,
+  "singleQuote": true,
+  "trailingComma": "all",
+  "overrides": [
+    {
+      "files": [
+        "*.json"
+      ],
+      "options": {
+        "printWidth": 2
+      }
+    },
+    {
+      "files": [
+        "*.code-workspace"
+      ],
+      "options": {
+        "printWidth": 0,
+        "quoteProps": "preserve",
+        "singleQuote": false,
+        "parser": "json5"
+      }
+    }
+  ]
+}
