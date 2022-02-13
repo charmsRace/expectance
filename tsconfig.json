@@ -14,6 +14,9 @@
     "paths": {
       "~/*": [
         "*"
+      ],
+      "@rs-clair/expectance": [
+        "index.ts"
       ]
     },
     // "sourceMap": true,
@@ -24,7 +27,8 @@
     "noImplicitReturns": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*",
+    "./examples/**/*"
   ]
   // "esModuleInterop": true
 }

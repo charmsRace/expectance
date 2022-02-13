@@ -8,6 +8,7 @@
     "node": ">=17"
   },
   "scripts": {
+    "run-test": "ts-node --project ./tsconfig.ts-node.json",
     "lint": "eslint --config ./.eslintrc.json --ext .ts src/**",
     "ts-node": "ts-node --project ./tsconfig.ts-node.json"
   },

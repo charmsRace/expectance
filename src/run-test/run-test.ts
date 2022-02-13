@@ -36,7 +36,7 @@ export const runTest = <Input, Output>({
     };
   });
 
-  results.forEach((result) => {
+  results.forEach(result => {
     console.log(printResult(result));
   });
 

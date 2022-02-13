@@ -1,13 +1,15 @@
-import { shallowArrayComparator } from '~/comparators';
-import { createJsonPrinter } from '~/printers';
-import { runTest } from '~/run-test';
+import {
+  createJsonPrinter,
+  runTest,
+  shallowArrayComparator,
+} from '@rs-clair/expectance';
 
 runTest({
   subject: (values: string) =>
     values
       .split(',')
-      .map((value) => value.trim())
-      .filter((value) => value !== ''),
+      .map(value => value.trim())
+      .filter(value => value !== ''),
 
   expectations: [
     ['', []],
