@@ -1,4 +1,4 @@
-import { Comparator } from '~/comparators';
+import { Comparator } from '~/comparator';
 
 export const looseComparator: Comparator = (a, b) => a == b;
 export const strictComparator: Comparator = (a, b) => a === b;

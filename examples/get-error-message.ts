@@ -1,5 +1,4 @@
-import { createJsonPrinter } from '~/printers';
-import { runTest } from '~/run-test';
+import { createJsonPrinter, runTest } from '@rs.clair/expectance';
 
 export const getErrorMesssage = (error: any): string => {
   if (error.response && error.response.data) {

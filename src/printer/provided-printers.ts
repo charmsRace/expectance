@@ -1,4 +1,4 @@
-import { Printer } from '~/printers';
+import { Printer } from '~/printer';
 
 export const defaultPrinter: Printer = value => `${value}`;
 

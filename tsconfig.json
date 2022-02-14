@@ -15,7 +15,7 @@
       "~/*": [
         "*"
       ],
-      "@rs-clair/expectance": [
+      "@rs.clair/expectance": [
         "index.ts"
       ]
     },

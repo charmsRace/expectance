@@ -1,5 +1,4 @@
-import { Printer } from '~/printers';
-import { Result } from '~/results';
+import { Result } from '~/result';
 
 export interface Summary {
   pass: number;
@@ -19,9 +18,3 @@ export const createSummary = <Input, Output>(
       fail: 0,
     },
   );
-
-export const printSummary: Printer<Summary> = ({ pass, fail }) =>
-  [
-    `Summary: ${pass}✔ / ${fail}❌`,
-    ...(fail === 0 ? ['All tests passed! ✔✔✔'] : []),
-  ].join('\n');

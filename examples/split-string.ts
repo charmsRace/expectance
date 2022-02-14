@@ -2,7 +2,7 @@ import {
   createJsonPrinter,
   runTest,
   shallowArrayComparator,
-} from '@rs-clair/expectance';
+} from '@rs.clair/expectance';
 
 runTest({
   subject: (values: string) =>
